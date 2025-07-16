@@ -1,4 +1,4 @@
-package com.carlosmagno.exchlist.ui.theme
+package com.carlosmagno.exchlist.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

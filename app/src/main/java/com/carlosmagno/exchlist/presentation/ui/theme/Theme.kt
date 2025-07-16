@@ -1,4 +1,4 @@
-package com.carlosmagno.exchlist.ui.theme
+package com.carlosmagno.exchlist.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
