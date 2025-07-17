@@ -12,4 +12,21 @@
     <string name="volume_24h">Vol (24h)</string>
     <string name="default_icon_desc">Ícone padrão</string>
     <string name="exchange_id">ID: %1$s</string>
+
+    <!-- ExchangeDetailScreen -->
+    <string name="exchange_details_title">Detalhes da Exchange</string>
+    <string name="back_button">Voltar</string>
+    <string name="favorite">Favoritar</string>
+    <string name="unfavorite">Desfavoritar</string>
+    <string name="status_label">Status: %1$s</string>
+    <string name="section_title_volume">Volumes (USD)</string>
+    <string name="last_1_hour">Última 1 hora</string>
+    <string name="last_24_hours">Últimas 24 horas</string>
+    <string name="last_30_days">Últimos 30 dias</string>
+    <string name="open_with">Abrir com</string>
+    <string name="no_app_found">Nenhum app encontrado para abrir URL</string>
+    <string name="exchange_default_name">Exchange</string>
+    <string name="exchange_icon_desc">Ícone Exchange</string>
+    <string name="rank_label">Rank:</string>
+    <string name="rank_icon_desc">Rank Icon</string>
 </resources>
