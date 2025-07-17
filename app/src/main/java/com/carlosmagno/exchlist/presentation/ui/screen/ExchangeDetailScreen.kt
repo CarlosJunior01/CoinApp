@@ -19,7 +19,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.outlined.FavoriteBorder
 import androidx.compose.material3.Card
@@ -80,8 +79,9 @@ fun ExchangeDetailScreen(
                 navigationIcon = {
                     IconButton(onClick = { backDispatcher?.onBackPressed() }) {
                         Icon(
-                            imageVector = Icons.Default.ArrowBack,
-                            contentDescription = stringResource(R.string.back_button)
+                            painter = painterResource(id = R.drawable.ic_arrow_back),
+                            contentDescription = stringResource(R.string.back_button),
+                            tint = MaterialTheme.colorScheme.onBackground
                         )
                     }
                 },
@@ -189,26 +189,40 @@ fun ExchangeDetailScreen(
                             }
                         }
                 ) {
-                    Column(modifier = Modifier.padding(Dimens.paddingScreen16)) {
-                        Text(
-                            text = exchange.name ?: stringResource(R.string.exchange_default_name),
-                            fontWeight = FontWeight.Bold,
-                            style = MaterialTheme.typography.titleMedium
-                        )
-                        Spacer(Modifier.height(Dimens.spacingScreen8))
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            Icon(
-                                painter = painterResource(id = R.drawable.ic_dollars_coin),
-                                contentDescription = stringResource(R.string.exchange_icon_desc),
-                                modifier = Modifier.size(Dimens.spacingScreen24)
-                            )
-                            Spacer(Modifier.width(Dimens.spacingScreen8))
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(Dimens.paddingScreen16),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Column(modifier = Modifier.weight(1f)) {
                             Text(
-                                text = websiteUrl,
-                                color = MaterialTheme.colorScheme.primary,
-                                style = MaterialTheme.typography.bodyMedium
+                                text = exchange.name ?: stringResource(R.string.exchange_default_name),
+                                fontWeight = FontWeight.Bold,
+                                style = MaterialTheme.typography.titleMedium
                             )
+                            Spacer(Modifier.height(Dimens.spacingScreen8))
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Icon(
+                                    painter = painterResource(id = R.drawable.ic_dollars_coin),
+                                    contentDescription = stringResource(R.string.exchange_icon_desc),
+                                    modifier = Modifier.size(Dimens.spacingScreen24)
+                                )
+                                Spacer(Modifier.width(Dimens.spacingScreen8))
+                                Text(
+                                    text = websiteUrl,
+                                    color = MaterialTheme.colorScheme.primary,
+                                    style = MaterialTheme.typography.bodyMedium
+                                )
+                            }
                         }
+
+                        Icon(
+                            painter = painterResource(id = R.drawable.ic_arrow_action),
+                            contentDescription = stringResource(R.string.ic_arrow_action),
+                            tint = MaterialTheme.colorScheme.onBackground,
+                            modifier = Modifier.size(Dimens.spacingScreen24)
+                        )
                     }
                 }
             }
