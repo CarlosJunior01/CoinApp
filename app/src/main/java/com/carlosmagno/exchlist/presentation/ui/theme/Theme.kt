@@ -77,7 +77,9 @@ fun ExchListTheme(
 
 
 object Dimens {
+    val spacingScreen2 = 2.dp
     val spacingScreen4 = 4.dp
+    val spacingScreen6 = 6.dp
     val spacingScreen8 = 8.dp
     val spacingScreen12 = 12.dp
     val spacingScreen16 = 16.dp
@@ -86,11 +88,8 @@ object Dimens {
 
     val paddingScreen4 = 4.dp
     val paddingScreen8 = 8.dp
-    val paddingScreen12 = 12.dp
     val paddingScreen16 = 16.dp
-    val paddingScreen24 = 24.dp
 
-    val fontSizeCaption14 = 14.sp
     val fontSizeBody16 = 16.sp
     val fontSizeSubtitle18 = 18.sp
     val fontSizeTitle24 = 24.sp
