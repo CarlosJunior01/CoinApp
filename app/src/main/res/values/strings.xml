@@ -29,4 +29,12 @@
     <string name="exchange_icon_desc">Ícone Exchange</string>
     <string name="rank_label">Rank:</string>
     <string name="rank_icon_desc">Rank Icon</string>
+
+    <!-- FavoriteScreen -->
+    <string name="favorites_title">Favoritos</string>
+    <string name="favorites_empty_message">Nenhum favorito encontrado</string>
+    <string name="unknown_exchange_name">Desconhecido</string>
+    <string name="exchange_id_label">ID: </string>
+    <string name="volume_24h_label">Vol (24h)</string>
+    <string name="ic_arrow_action">Botão action, ver mais</string>
 </resources>
