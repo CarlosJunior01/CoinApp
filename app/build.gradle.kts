@@ -1,7 +1,18 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     kotlin("kapt")
+}
+
+val secretsFile = rootProject.file("secrets.properties")
+val secrets = if (secretsFile.exists()) {
+    Properties().apply {
+        load(secretsFile.inputStream())
+    }
+} else {
+    Properties()
 }
 
 android {
@@ -16,6 +27,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "COIN_API_KEY", "\"${secrets.getProperty("COIN_API_KEY")}\"")
+
         vectorDrawables {
             useSupportLibrary = true
         }
@@ -38,6 +52,7 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
+        buildConfig = true
         compose = true
     }
     composeOptions {
