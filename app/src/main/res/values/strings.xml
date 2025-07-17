@@ -1,3 +1,15 @@
 <resources>
+    <!-- APP Name -->
     <string name="app_name">ExchList</string>
+
+    <!-- ExchangeListScreen -->
+    <string name="crypto_assets">Criptoativos</string>
+    <string name="icon_crypto_assets_desc">Ícone Criptoativos</string>
+    <string name="favorites">Favoritos</string>
+    <string name="go_to_favorites_desc">Ir para Favoritos</string>
+    <string name="error_prefix">Erro: %1$s</string>
+    <string name="default_exchange_name">Desconhecido</string>
+    <string name="volume_24h">Vol (24h)</string>
+    <string name="default_icon_desc">Ícone padrão</string>
+    <string name="exchange_id">ID: %1$s</string>
 </resources>
