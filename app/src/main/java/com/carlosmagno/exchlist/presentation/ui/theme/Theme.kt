@@ -14,6 +14,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.core.view.WindowCompat
 
 private val DarkColorScheme = darkColorScheme(
@@ -71,4 +73,25 @@ fun ExchListTheme(
         typography = Typography,
         content = content
     )
+}
+
+
+object Dimens {
+    val spacingScreen4 = 4.dp
+    val spacingScreen8 = 8.dp
+    val spacingScreen12 = 12.dp
+    val spacingScreen16 = 16.dp
+    val spacingScreen24 = 24.dp
+    val spacingScreen48 = 48.dp
+
+    val paddingScreen4 = 4.dp
+    val paddingScreen8 = 8.dp
+    val paddingScreen12 = 12.dp
+    val paddingScreen16 = 16.dp
+    val paddingScreen24 = 24.dp
+
+    val fontSizeCaption14 = 14.sp
+    val fontSizeBody16 = 16.sp
+    val fontSizeSubtitle18 = 18.sp
+    val fontSizeTitle24 = 24.sp
 }
