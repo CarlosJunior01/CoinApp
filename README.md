@@ -100,6 +100,25 @@ Elimina a necessidade de usar XML para construir telas, proporcionando maior pro
 <img width="1246" height="698" alt="image" src="https://github.com/user-attachments/assets/25cd1393-e2f2-4222-95bd-00c15d0756e1" />
 
 *******
+* **Configuração do Projeto:** 
+*******
+Para que o aplicativo funcione corretamente, é necessário configurar uma chave de API da CoinAPI, que é responsável por fornecer os dados de exchanges utilizados pelo app.
+
+1. Obtenha sua chave de API: <br>
+* Acesse: https://www.coinapi.io/
+* Crie uma conta (gratuita ou paga, conforme sua necessidade).
+* Copie sua chave de API pessoal.
+  
+2. Atualize o arquivo secrets.properties na raiz do projeto: <br>
+Onde: Na raiz do projeto (nível do build.gradle) / secrets.properties
+
+3. Adicione sua chave no arquivo: <br>
+Dentro do secrets.properties, insira a chave substituindo “YOUR-API-KEY-HERE”:
+COIN_API_KEY=YOUR-API-KEY-HERE
+
+Importante: Nunca suba a chave arquivo para o controle de versão (Git) para proteger suas credenciais.
+
+*******
 * **Conclusão:** 
 *******
 Para este projeto foi escolhido o padrão de Arquitetura MVVM com Clean Architecture justamente por fazer uso um padrão de divisão de responsabilidades, com separação de conceitos, e camadas diferentes, nele temos o desacoplamento da camada de "Network" da camada de "Apresentação", Repository: Utilizado para centralizar funções e não repetir códigos centraliza o acesso aos dados. UseCases com responsabilidade única, possuindo as regras de negócio da aplicação e fazendo o meio de campo entre as duas camadas "ViewModel" e "Repository" separando ainda mais as responsabilidades da aplicação, separando a camada de apresentação da camada de dados.
