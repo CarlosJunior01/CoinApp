@@ -25,7 +25,7 @@ build/
 
 # Arquivos de compilação
 *.apk
-*.ap_ 
+*.ap_
 *.dex
 
 # Arquivos temporários do sistema operacional
