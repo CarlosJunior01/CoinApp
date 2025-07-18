@@ -22,10 +22,10 @@ fun MainApp() {
 
     NavHost(navController, startDestination = Routes.LIST) {
         composable(Routes.LIST) {
-            ExchangeListScreen(navController) { selected ->
+            ExchangeListScreen(navController, onExchangeClick = { selected: Exchange ->
                 val json = Uri.encode(gson.toJson(selected))
                 navController.navigate("${Routes.DETAIL}/$json")
-            }
+            })
         }
 
         composable(
