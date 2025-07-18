@@ -15,6 +15,7 @@ O app fornece dados atualizados sobre volume de transações, histórico de ativ
 * MVVM + CLEAN (Model-View-ViewModel) + (Clean Archtecture)
 * Koin para injeção de dependência
 * Retrofit para comunicação com a API
+* Room para persistência de dados locais
 * Testes automatizados com JUnit e MockK
 
 ![GitHub top language](https://img.shields.io/github/languages/top/Carlosjr01/Filmes-App) 
