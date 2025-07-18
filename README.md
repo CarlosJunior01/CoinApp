@@ -16,7 +16,7 @@ O app fornece dados atualizados sobre volume de transações, histórico de ativ
 * Koin para injeção de dependência
 * Retrofit para comunicação com a API
 * Room para persistência de dados locais
-* Testes automatizados com JUnit e MockK
+* Testes unitários e automatizados com JUnit e MockK
 
 ![GitHub top language](https://img.shields.io/github/languages/top/Carlosjr01/Filmes-App) 
 [![MVVM](https://img.shields.io/badge/Architecture-MVVM_+_CLEAN_ARCHITECTURE-black)](https://www.youtube.com/watch?v=tIPxSWx5qpk) 
