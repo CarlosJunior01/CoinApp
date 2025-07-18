@@ -50,9 +50,9 @@ import org.koin.androidx.compose.getViewModel
 @Composable
 fun ExchangeListScreen(
     navController: NavController,
-    onExchangeClick: (Exchange) -> Unit
+    onExchangeClick: (Exchange) -> Unit,
+    viewModel: ExchangeViewModel = getViewModel()
 ) {
-    val viewModel: ExchangeViewModel = getViewModel()
     val exchanges = viewModel.state
     val error = viewModel.error
 
